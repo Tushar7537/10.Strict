@@ -1,0 +1,172 @@
+* {
+  color: primarycolor;
+  line-height: 1.6;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+img {
+  width: 100%; }
+
+.navbar .navbar-nav .nav-item .nav-link, .btn-custom:hover {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all  0.3s linear; }
+
+.service-section .service .icon {
+  background: linear-gradient(to right, #1da1e5b8 50%, #29b8e5 50%, #1daee5c9 50%, #7ccdea 58%); }
+
+.navbar {
+  background-color: #f6f9f9;
+  padding: 30px 0; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #2d3950;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #15a4fa; }
+
+.banner-section {
+  background-image: url(../images/strict.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .banner-section .click {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 24px; }
+  .banner-section .row {
+    height: 85vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff; }
+    .banner-section .row h1 {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600px;
+      font-size: 120px; }
+    .banner-section .row span {
+      width: 480px;
+      background: #15a4fa;
+      display: block;
+      height: 4px;
+      margin: auto;
+      margin-bottom: 20px; }
+    .banner-section .row p {
+      font-size: 15px;
+      color: #fff; }
+
+.btn-custom {
+  border: 1px solid #15a4fa;
+  color: #fff;
+  padding: 13px 30px; }
+  .btn-custom:hover {
+    background-color: #15a4fa;
+    color: #fff; }
+
+.about-section {
+  background-color: #f6f9f9;
+  text-align: center;
+  padding: 40px 0; }
+  .about-section h2 {
+    font-size: 30px;
+    font-weight: 500; }
+
+.fa, .fas {
+  font-weight: 900;
+  font-size: 40px; }
+
+.fab, .far {
+  font-weight: 400;
+  font-size: 40px; }
+
+.service-section {
+  padding: 70px 0;
+  text-align: center; }
+  .service-section .service .icon {
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    margin: auto; }
+    .service-section .service .icon i {
+      text-shadow: 1px 1px 3px #2d3950; }
+  .service-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0; }
+
+.gallery-section {
+  color: #2d3950;
+  background-color: #f6f9f9; }
+  .gallery-section .gallery-article {
+    text-align: center;
+    padding: 20px 0; }
+  .gallery-section img {
+    margin-bottom: 30px;
+    display: block; }
+
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+  background-image: url(../images/contact.png);
+  color: #fff;
+  background-color: #00008b8f;
+  background-blend-mode: multiply; }
+  .contact-section .form-control {
+    background-color: #fff0;
+    border: 1px solid #ced4da69; }
+  .contact-section .btn-custom:hover {
+    background-color: #34668400;
+    color: #fff;
+    /* border: 1px solid #0000005e; */ }
+  .contact-section .btn-custom {
+    border: 1px solid #717e86ab;
+    color: #fff;
+    padding: 13px 30px; }
+
+.footer-section .icon {
+  text-align: right; }
+.footer-section .fab, .footer-section .far {
+  font-weight: 400;
+  padding: 5px 10px 0;
+  font-size: 25px; }
+
+@media (max-width: 991px) {
+  .about-section p {
+    margin-top: 0;
+    font-size: 13px; }
+
+  .service-section .service {
+    text-align: center;
+    padding: 10px; }
+    .service-section .service p {
+      font-size: 18px; } }
+@media (max-width: 767px) {
+  .about-section p {
+    margin-top: 0;
+    font-size: 12px;
+    padding-top: 6px; }
+
+  .service-section .service {
+    text-align: center;
+    padding: 10px; }
+    .service-section .service p {
+      font-size: 22px; } }
+@media (max-width: 575px) {
+  .banner-section .row h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600px;
+    font-size: 94px; }
+  .banner-section .row p {
+    font-size: 13px; }
+  .banner-section .row span {
+    width: 389px; } }
+
+/*# sourceMappingURL=style.css.map */

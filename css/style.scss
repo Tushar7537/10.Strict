@@ -1,0 +1,302 @@
+
+*{
+	    color: primarycolor;
+	    line-height: 1.6;
+	    font-size: 16px;
+	    box-sizing: border-box;
+}
+img{
+	width: 100%;
+}
+
+%transition{
+	transition:all 0.3s linear ;
+				-moz-transition:all 0.3s linear ;
+				-webkit-transition:all  0.3s linear;
+}
+
+%gradient{
+background: linear-gradient(to right, #1da1e5b8 50%, #29b8e5 50%, #1daee5c9 50%, #7ccdea 58%);
+
+}
+$primarycolor :  #2d3950;
+$secondarycolor : #15a4fa;
+$bgcolor:#f6f9f9;
+
+.navbar{
+	background-color: $bgcolor;
+	padding: 30px 0;
+	.navbar-nav{
+		.nav-item{
+			.nav-link{
+				color: $primarycolor;
+				font-weight: 600;
+				text-transform: uppercase;
+				@extend %transition;
+				&:hover{
+					color: $secondarycolor;
+				}
+
+			}
+		}
+	}
+}
+
+
+.banner-section{
+	background-image: url(../images/strict.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	.click{
+		    position: absolute;
+    color: #fff;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 24px;
+
+	}
+
+
+	.row{
+		height: 85vh;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		color: #fff;
+			h1{
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: 600px;
+				font-size: 120px;
+
+			}
+
+		span{
+			    width: 480px;
+			    background:$secondarycolor;
+			    display: block;
+			    height: 4px;
+			    margin: auto;
+			    margin-bottom: 20px;
+		}
+
+		p{
+			font-size: 15px;
+			color: #fff;
+			}
+
+
+		}
+
+
+}
+
+.btn-custom{
+	border:1px solid $secondarycolor;
+	color: #fff;
+	    padding: 13px 30px;
+	    &:hover{
+	    	background-color:$secondarycolor;
+	    	color: #fff;
+	    	@extend %transition;
+	    }
+}
+
+
+.about-section{
+	background-color: $bgcolor;
+	text-align: center;
+	padding: 40px 0;
+	h2{
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	p{
+
+	}
+}
+.fa, .fas {
+    font-weight: 900;
+    font-size: 40px;
+}
+.fab, .far {
+    font-weight: 400;
+    font-size: 40px;
+}
+.service-section{
+	padding: 70px 0;
+	text-align: center;
+
+	.service{
+		.icon{
+			@extend %gradient;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    margin: auto;
+
+
+			i{
+				text-shadow: 1px 1px 3px #2d3950;
+			}
+		}
+	}
+
+	h2{
+		font-size: 22px;
+		font-weight: 600;
+		margin: 10px 0;
+	}
+
+	p{
+
+	}
+}
+
+.gallery-section{
+	color:$primarycolor; 
+	background-color: $bgcolor;
+	.gallery-article{
+		text-align: center;
+		padding: 20px 0;
+
+	}
+	img{
+		margin-bottom: 30px;
+		display: block;
+		
+	}
+
+
+}
+
+.contact-section{
+	padding: 50px 0;
+	text-align: center;
+	background-image: url(../images/contact.png);
+	color: #fff;
+	background-color: #00008b8f;
+    background-blend-mode: multiply;
+	
+.form-control {
+	background-color: #fff0;
+  
+    border: 1px solid #ced4da69;
+}
+
+.btn-custom:hover {
+    background-color: #34668400;
+    color: #fff;
+    /* border: 1px solid #0000005e; */
+}
+
+.btn-custom {
+    border: 1px solid #717e86ab;
+    color: #fff;
+    padding: 13px 30px;
+}
+	
+}
+
+.footer-section{
+	.icon{
+		    text-align: right;
+		ul{
+			a{
+
+			}
+		}
+	}
+
+	.fab, .far {
+    font-weight: 400;
+    padding: 5px 10px 0;
+    font-size: 25px;
+}
+}
+
+
+
+@media(max-width: 1999px){
+
+}
+@media(max-width: 991px){
+	.about-section{
+		p{
+			    margin-top: 0;
+    			font-size: 13px;
+
+		}
+	}
+	.service-section{
+		.service{
+			text-align: center;
+			padding: 10px;
+			.icon{
+				
+				i{
+					
+				}
+			}
+			p{
+				font-size: 18px;
+			}
+		}
+	}
+}
+@media(max-width: 767px){
+
+		.about-section{
+		p{
+			    margin-top: 0;
+    			font-size: 12px;
+    			padding-top: 6px;
+		}
+	}
+		.service-section{
+		.service{
+			text-align: center;
+			padding: 10px;
+			.icon{
+				
+				i{
+					
+				}
+			}
+			p{
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media(max-width: 575px){
+
+	.banner-section .row {
+
+		h1 {
+		    text-transform: uppercase;
+		    color: #fff;
+		    font-weight: 600px;
+		    font-size: 94px;
+		}
+
+	p{
+
+	font-size: 13px;
+	}
+
+span {
+	width: 389px;
+	}
+}
+
+
+}
+
